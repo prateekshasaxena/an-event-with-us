@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Event photo gallery from An Event With Us — travel, workshops, conference halls, gala nights, branding, food zones, trade zones and in-house production." />
+  <meta name="theme-color" content="#2E1065" />
+  <title>Gallery | An Event With Us</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <div class="preview-banner">
+    DRAFT PREVIEW — full multi-page site with real event photos &amp; a smaller logo. Not live yet.
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="An Event With Us home">
+        <img src="images/logo.png" alt="An Event With Us logo">
+        <span>An Event With Us<small>Always Behind Your Satisfaction</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <span class="ico" aria-hidden="true">☰</span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="work.html">Work</a>
+        <a class="nav-link active" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-cta" href="contact.html">Get a Quote <span class="ico" aria-hidden="true">→</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =======================================================
+         PAGE HEADER
+    ======================================================== -->
+    <section class="page-header" style="background-image:linear-gradient(rgba(15,7,32,.82), rgba(46,16,101,.78)), url('images/svc-gala.jpg')">
+      <div class="container">
+        <div class="page-header-crumb"><a href="index.html">Home</a><span>/</span>Gallery</div>
+        <h1>Moments from our events.</h1>
+        <p>Real photos from the conferences, workshops, gala nights and exhibitions we've delivered. Filter by category or click any photo to view it larger.</p>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         GALLERY
+    ======================================================== -->
+    <section class="section section--white">
+      <div class="container">
+
+        <div class="gallery-filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="travel">Travel</button>
+          <button class="filter-btn" data-filter="workshop">Workshops</button>
+          <button class="filter-btn" data-filter="hall">Conference Hall</button>
+          <button class="filter-btn" data-filter="poster">Poster</button>
+          <button class="filter-btn" data-filter="gala">Gala Night</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+          <button class="filter-btn" data-filter="food">Food Zone</button>
+          <button class="filter-btn" data-filter="trade">Trade Zone</button>
+          <button class="filter-btn" data-filter="production">Production</button>
+        </div>
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item reveal" data-category="travel" style="--i:1">
+            <img src="images/svc-travel.jpg" alt="Travel management car fleet">
+            <div class="gallery-item-label">Travel Management</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="workshop" style="--i:2">
+            <img src="images/svc-workshop.jpg" alt="Medical workshop committee table">
+            <div class="gallery-item-label">Conference &amp; Workshop Management</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="hall" style="--i:3">
+            <img src="images/svc-hall.jpg" alt="Conference hall LED wall stage">
+            <div class="gallery-item-label">Conference Hall Setup</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="poster" style="--i:4">
+            <img src="images/svc-poster.jpg" alt="Poster presentation hall walkway">
+            <div class="gallery-item-label">Poster Presentation Setup</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="gala" style="--i:5">
+            <img src="images/svc-gala.jpg" alt="Gala night dancers on stage">
+            <div class="gallery-item-label">Gala Night &amp; Hospitality</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="branding" style="--i:6">
+            <img src="images/svc-branding.jpg" alt="Event entry gate and welcome arch branding">
+            <div class="gallery-item-label">Event Branding</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="food" style="--i:7">
+            <img src="images/svc-food.jpg" alt="Food zone banquet hall setup">
+            <div class="gallery-item-label">Food Zone</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="trade" style="--i:8">
+            <img src="images/svc-trade.jpg" alt="Octonorm trade zone exhibition stall">
+            <div class="gallery-item-label">Trade Zone &amp; Exhibition Stalls</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="production" style="--i:9">
+            <img src="images/svc-production.jpg" alt="HP Latex printer in-house production">
+            <div class="gallery-item-label">In-house Production &amp; Printing</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="workshop" style="--i:1">
+            <img src="images/work-workshop.jpg" alt="Technical workshop demonstration">
+            <div class="gallery-item-label">Technical Workshops</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="workshop" style="--i:2">
+            <img src="images/gallery-workshop-2.jpg" alt="Speaker presenting at conference podium">
+            <div class="gallery-item-label">Conference Sessions</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="workshop" style="--i:3">
+            <img src="images/gallery-workshop-3.jpg" alt="Registration desk with committee members">
+            <div class="gallery-item-label">Delegate Registration</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="workshop" style="--i:4">
+            <img src="images/gallery-awards.jpg" alt="Award plaques displayed on a table">
+            <div class="gallery-item-label">Awards &amp; Recognition</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="workshop" style="--i:5">
+            <img src="images/about.jpg" alt="Conference stage with full audience">
+            <div class="gallery-item-label">Conference Hall</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="hall" style="--i:6">
+            <img src="images/gallery-hall-2.jpg" alt="Seated audience in conference hall">
+            <div class="gallery-item-label">Conference Hall</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="gala" style="--i:7">
+            <img src="images/hero.jpg" alt="Gala night stage performance">
+            <div class="gallery-item-label">Gala Night</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="gala" style="--i:8">
+            <img src="images/gallery-gala-2.jpg" alt="Live guitar performance at gala night">
+            <div class="gallery-item-label">Gala Night Entertainment</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="trade" style="--i:9">
+            <img src="images/gallery-trade-2.jpg" alt="Pharma exhibition booth at trade zone">
+            <div class="gallery-item-label">Trade Zone &amp; Exhibition</div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="production" style="--i:1">
+            <img src="images/gallery-production-2.jpg" alt="CNC and laser cutting machines for in-house production">
+            <div class="gallery-item-label">In-house Production</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         CTA
+    ======================================================== -->
+    <section class="cta-band">
+      <div class="container cta-inner reveal">
+        <div>
+          <h2>Want your event featured here next?</h2>
+          <p>Tell us what you are planning. Let's turn the idea into an experience.</p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Start a Conversation <span class="ico" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="brand-row">
+            <img src="images/logo.png" alt="An Event With Us logo">
+            <h3>An Event With Us</h3>
+          </div>
+          <p>Always Behind Your Satisfaction — creating extraordinary event experiences through planning, creativity, technology and execution.</p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="work.html">Work</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Get In Touch</h4>
+          <div class="footer-links">
+            <a href="tel:+917974785122">+91 7974785122</a>
+            <a href="mailto:aneventswithus@gmail.com">aneventswithus@gmail.com</a>
+            <a href="https://www.aneventswithus.com" target="_blank" rel="noopener">www.aneventswithus.com</a>
+            <a href="contact.html">Request a Quote</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> An Event With Us. All rights reserved.</span>
+        <span>Always Behind Your Satisfaction.</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =======================================================
+       LIGHTBOX
+  ======================================================== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close"><span class="ico" aria-hidden="true">✕</span></button>
+    <button class="lightbox-prev" aria-label="Previous photo"><span class="ico" aria-hidden="true">←</span></button>
+    <img id="lightboxImg" src="" alt="">
+    <button class="lightbox-next" aria-label="Next photo"><span class="ico" aria-hidden="true">→</span></button>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
