@@ -55,6 +55,7 @@ button, input, textarea { font: inherit; }
 
 .section { padding: 128px 0; position: relative; }
 .section--white { background: var(--white); }
+.section--tint { background: var(--bg); }
 
 .eyebrow {
   display: inline-flex;
@@ -521,8 +522,8 @@ button, input, textarea { font: inherit; }
   border-radius: 30px;
   overflow: hidden;
   background:
-    linear-gradient(0deg, rgba(15,7,32,.88) 0%, rgba(46,16,101,.25) 55%, rgba(46,16,101,.1) 100%),
-    url('../images/about.jpg') center/cover no-repeat;
+    linear-gradient(190deg, rgba(15,7,32,.55) 0%, rgba(30,10,66,.72) 45%, rgba(15,7,32,.93) 100%),
+    url('../images/clients/cipla-akjain.jpg') center/cover no-repeat;
   box-shadow: var(--shadow-lg);
 }
 
@@ -800,6 +801,213 @@ button, input, textarea { font: inherit; }
 .feature-list li .ico { color: var(--pink); margin-top: 2px; }
 
 /* =========================
+   VALUES PILLS
+========================= */
+.values-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+.value-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 26px;
+  border-radius: 999px;
+  background: var(--pink-soft);
+  color: var(--purple);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  transition: transform .25s ease, background .25s ease, border-color .25s ease;
+}
+.value-pill:hover {
+  background: var(--white);
+  border-color: var(--pink);
+  transform: translateY(-3px);
+}
+
+/* =========================
+   CLIENT LOGOS
+========================= */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 18px;
+}
+.client-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 22px 18px;
+  height: 100px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.client-logo:hover { transform: translateY(-3px); box-shadow: var(--shadow-sm); }
+.client-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: .72;
+  transition: filter .4s ease, opacity .4s ease;
+}
+.client-logo:hover img { filter: grayscale(0%); opacity: 1; }
+
+/* compact variant used in the Home page "Trusted By" strip */
+.trustedby-grid {
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 14px;
+}
+.trustedby-grid .client-logo { height: 78px; padding: 14px 16px; }
+
+/* =========================
+   MINI EVENT GRID (past clients)
+========================= */
+.mini-event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+.mini-event-card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.mini-event-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.mini-event-card .photo {
+  position: relative;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg);
+  filter: grayscale(85%);
+  transition: filter .5s ease;
+}
+.mini-event-card:hover .photo { filter: grayscale(0%); }
+.mini-event-card .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  background: var(--pink);
+  color: var(--white);
+  font-size: .62rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+.mini-event-card .info { padding: 16px 18px; }
+.mini-event-card .info h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: .96rem;
+  color: var(--purple);
+  line-height: 1.3;
+}
+.mini-event-card .info span {
+  display: block;
+  margin-top: 5px;
+  font-size: .76rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* =========================
+   PRINTING CATALOG
+========================= */
+.printing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 26px;
+}
+.printing-category-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.printing-category-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.printing-category-card .photo {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg);
+}
+.printing-category-card .body { padding: 22px 24px 26px; }
+.printing-category-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.12rem;
+  color: var(--purple);
+  margin-bottom: 14px;
+}
+.printing-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.printing-tag {
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  padding: 6px 12px;
+  border-radius: 999px;
+  line-height: 1.3;
+}
+.printing-tag.new {
+  background: var(--pink-soft);
+  color: var(--pink);
+  border-color: transparent;
+  font-weight: 800;
+}
+
+/* =========================
+   FULL SERVICE CHECKLIST
+========================= */
+.service-checklist-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(15, auto);
+  grid-auto-flow: column;
+  gap: 0 48px;
+}
+.service-checklist-grid div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 2px;
+  border-bottom: 1px solid var(--line);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--purple);
+  font-size: 1rem;
+}
+.service-checklist-grid div .ico {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--pink-soft);
+  color: var(--pink);
+  font-size: .74rem;
+  font-weight: 800;
+}
+
+/* =========================
    PROCESS STRIP
 ========================= */
 .process { padding: 28px 0; background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -843,10 +1051,11 @@ button, input, textarea { font: inherit; }
   z-index: -2;
   background-size: cover;
   background-position: center;
-  transition: transform .5s ease;
+  filter: grayscale(85%);
+  transition: transform .5s ease, filter .5s ease;
 }
 
-.project-card:hover .project-art { transform: scale(1.06); }
+.project-card:hover .project-art { transform: scale(1.06); filter: grayscale(0%); }
 
 .project-content {
   position: absolute;
@@ -1410,6 +1619,7 @@ button, input, textarea { font: inherit; }
   .featured-case-content .btn { width: 100%; text-align: center; justify-content: center; }
   .video-play-btn { width: 58px; height: 58px; font-size: 1.05rem; }
   .video-placeholder-tag { white-space: normal; text-align: center; width: calc(100% - 32px); }
+  .service-checklist-grid { grid-template-columns: 1fr; grid-template-rows: none; grid-auto-flow: row; }
 }
 
 @media (prefers-reduced-motion: reduce) {
