@@ -101,20 +101,6 @@ button, input, textarea { font: inherit; }
 .section-heading.center p { margin-inline: auto; }
 
 /* =========================
-   PREVIEW NOTE BANNER
-========================= */
-.preview-banner {
-  position: relative;
-  z-index: 1001;
-  background: #FDE68A;
-  color: #78350F;
-  font-size: .78rem;
-  font-weight: 700;
-  text-align: center;
-  padding: 9px 16px;
-}
-
-/* =========================
    SCROLL PROGRESS BAR
 ========================= */
 .scroll-progress {
