@@ -1,4 +1,4 @@
-SEO foundation reviewed for the intended domain https://www.aneventwithus.com/.
+SEO foundation reviewed for the intended domain https://aneventwithus.com/.
 
 Before launch: connect that domain with HTTPS. If publishing under another domain or GitHub subdirectory, update canonical, social, schema and sitemap URLs. Publish index.html at the root.
 After launch: verify the domain in Google Search Console and submit sitemap.xml; check indexing and Rich Results Test. Maintain matching business contact details in Google Business Profile and social profiles. Add original event photographs, useful project descriptions and genuine client feedback when available.
