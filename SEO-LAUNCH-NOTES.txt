@@ -1,0 +1,26 @@
+SEO foundation reviewed for the intended domain https://www.aneventswithus.com/.
+
+Before launch: connect that domain with HTTPS. If publishing under another domain or GitHub subdirectory, update canonical, social, schema and sitemap URLs. Publish index.html at the root.
+After launch: verify the domain in Google Search Console and submit sitemap.xml; check indexing and Rich Results Test. Maintain matching business contact details in Google Business Profile and social profiles. Add original event photographs, useful project descriptions and genuine client feedback when available.
+No ranking or traffic guarantee. Instagram profile is pending; no handle has been invented.
+
+abhijeet-concert.html: one H1, unique metadata, canonical and structured business/page data.
+about.html: one H1, unique metadata, canonical and structured business/page data.
+achievers-night.html: one H1, unique metadata, canonical and structured business/page data.
+aimra.html: one H1, unique metadata, canonical and structured business/page data.
+brand-experiences.html: one H1, unique metadata, canonical and structured business/page data.
+contact.html: one H1, unique metadata, canonical and structured business/page data.
+corporate-events.html: one H1, unique metadata, canonical and structured business/page data.
+experiences.html: one H1, unique metadata, canonical and structured business/page data.
+faq.html: one H1, unique metadata, canonical and structured business/page data.
+fashion-week.html: one H1, unique metadata, canonical and structured business/page data.
+films.html: one H1, unique metadata, canonical and structured business/page data.
+index.html: one H1, unique metadata, canonical and structured business/page data.
+indocon.html: one H1, unique metadata, canonical and structured business/page data.
+live-production.html: one H1, unique metadata, canonical and structured business/page data.
+moments.html: one H1, unique metadata, canonical and structured business/page data.
+nivesh-mahakumbh.html: one H1, unique metadata, canonical and structured business/page data.
+printing.html: one H1, unique metadata, canonical and structured business/page data.
+privacy.html: one H1, unique metadata, canonical and structured business/page data.
+toyota-launch.html: one H1, unique metadata, canonical and structured business/page data.
+weddings-celebrations.html: one H1, unique metadata, canonical and structured business/page data.
